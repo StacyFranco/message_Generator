@@ -41,7 +41,7 @@ const messageData = {
 
 }
 
-// changing enurable propetries
+// changing enurable propetries ( so they dont appear together if the getters on the for..in loop)
 Object.defineProperties(messageData, {
     _places: {enumerable: false},
     _activites: {enumerable: false},
