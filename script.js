@@ -63,12 +63,13 @@ const message = () => {
 
 }
 
-
-// // Testing the setters
-// console.log(messageData.foods);
-// messageData.foods = 'test';
-// messageData._foods.push('test2')
-// console.log(messageData.foods);
+/*
+// Testing the setters
+console.log(messageData.foods);
+messageData.foods = 'test';
+messageData._foods.push('test2')
+console.log(messageData.foods);
+*/
 
 // Choosen the words:
 messageChose = message();
