@@ -1,4 +1,4 @@
-// Project Relex Day!!!
+// Project Relax Day!!!
 
 
 
@@ -28,9 +28,9 @@ const messageData = {
             this._places.push(NewPlace);
         }
     },
-    set activites(NewActivite) {
-        if (typeof NewActivite === 'string' && NewActivite.length > 0 && !this._activites.some((x) => x === NewActivite)) {
-            this._activites.push(NewActivite);
+    set activites(NewActivity) {
+        if (typeof NewActivity === 'string' && NewActivity.length > 0 && !this._activites.some((x) => x === NewActivity)) {
+            this._activites.push(NewActivity);
         }
     },
     set foods(NewFood) {
@@ -41,7 +41,7 @@ const messageData = {
 
 }
 
-// changing enurable propetries ( so they dont appear together if the getters on the for..in loop)
+// changing enumerable properties ( so they don't appear together if the getters on the for..in loop)
 Object.defineProperties(messageData, {
     _places: {enumerable: false},
     _activites: {enumerable: false},
@@ -49,7 +49,7 @@ Object.defineProperties(messageData, {
 });
 
 
-// Function for randonize message:
+// Function for randomize message:
 const random = (arr) => arr[Math.floor(Math.random() * (arr.length))]
 
 // Function to get the message:
@@ -72,15 +72,15 @@ console.log(messageData.foods);
 */
 
 // Choosen the words:
-messageChose = message();
+messageChoosed = message();
 //console.log(messageChose)
 
 // Writing the complete message:
 console.log();
- console.log('                TAKE A DAY FOR RELEX!                    ')
+ console.log('                TAKE A DAY FOR RELAX!                    ')
  console.log('=========================================================')
  //console.log(`You should go to a ${messageChose[0]}! Maybe do a ${messageChose[1]}, and you must try a ${messageChose[2]}!`)
- console.log(`    * Your lucky place for today: ${messageChose[0]}!`);
- console.log(`    * Maybe do this activite: ${messageChose[1]}!`);
- console.log(`    * You must try: ${messageChose[2]}!`);
+ console.log(`    * Your lucky place for today: ${messageChoosed[0]}!`);
+ console.log(`    * Maybe do this activity: ${messageChoosed[1]}!`);
+ console.log(`    * You must try: ${messageChoosed[2]}!`);
  console.log();
